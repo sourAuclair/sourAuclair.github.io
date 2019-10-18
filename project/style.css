@@ -1,10 +1,10 @@
 /* Section for navbar */
-body{
+html, body{
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
     background-color: #D9D9D9;
     font-weight: 300;
     height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #header{
@@ -12,25 +12,17 @@ body{
     width: 100%;
     background-color:#9FBACE;
     font-size: 20pt;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
 #header-nav {
     height: 50px;
-    width: 1100px;
+    width: 1130px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     text-align: center;    
-}
-
-#logo {
-    color: white;
-    background-color:  #8B99A3;
-    padding-top: 10px;
-    padding-bottom: 9px;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .navbar {
@@ -106,6 +98,12 @@ body{
     background-color: white;
 }
 
+#logo {
+    color: white;
+    background-color:  #8B99A3;
+}
+
+
 
 /*Article  section*/
 
@@ -115,18 +113,179 @@ body{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    height: 100%;
 }
 
 #headline {
+    font-size: 36pt;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+/*RESPONSIVE */
+
+@media screen and (min-width: 1130px){
+    #small-header{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1130px){
+    /*Medium sized screen. Navbar still same, but no search*/
+    #header-nav {
+        width: 100%;
+    }
+
+    #search-bar{
+        display: none;
+    }
+
+    .article{
+        width: 100%;
+    }
+
+    #small-header {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px){
+    /*Setting css for small screen header*/
+    #header {
+        display: none;
+    }
+
+    #small-header {
+        display: inline-block;
+        width: 100%;
+        
+    }
+
+    #logo {
+        width: 110px;
+    }
+
+    #logo a{
+        width: 100px;
+        padding-right: 0px;
+        padding-left: 10px; 
+    }
+
+    #small-dropdown {
+        display: none;
+        text-decoration-line: none;
+        list-style-type: none;
+        overflow: hidden;
+        float: right;
+        background-color: #9FBACE;
+        width: 100%;;
+    }
+
+    #to-hov {
+        position: absolute;
+        right: 15px;
+        top: -20px;
+        padding: 5px;
+    }
+
+    #small-on-hover:hover #small-dropdown{
+        display: block;
+        text-decoration-line: none;
+        
+        
+    }
+
+    #small-on-hover{
+        position: absolute;
+        top: 23px;
+        text-align: left;
+        width: 100%;
+    }
+
+    #small-dropdown li {
+        margin: 10px;
+        border-bottom: 0.4px solid rgb(197, 197, 197);
+
+    }
+
+    
+
+    #small-dropdown a {
+        color:rgb(0, 0, 0); 
+        text-decoration-line: none;
+        display: block;
+        padding-bottom: 2px;
+    }
+
+    #under a{
+        font-size: 7pt;
+        color:rgb(255, 255, 255); 
+
+    }
+
+    #to-hov:hover {
+        bottom: 100px;
+        
+        background-color: #9FBACE;
+        
+    }
+
+
+
+
+
+}
+
+
+
+
+/*Suggestions.html*/
+
+
+#suggestion-form {
+    
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    display: inline;
+
+}
+
+.suggestion-form-child {
+    width: 95%;
+}
+
+#ingredients {
+    height: 150px;
+    display: grid;
+}
+
+.sug {
+    margin-top: 15px;
+    height: 23px;
+    width: 190px;
+    background-color: white;
     
 }
 
+#add-ing{
+    margin-bottom: 20px;
+}
+
+#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 /*Footer section*/
 
 footer {
     position: fixed;
     bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color:  #7395AE;
 }
