@@ -1,0 +1,132 @@
+/* Section for navbar */
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #D9D9D9;
+    font-weight: 300;
+    height: 100%;
+}
+
+#header{
+    height: 50px;
+    width: 100%;
+    background-color:#9FBACE;
+    font-size: 20pt;
+
+}
+
+#header-nav {
+    height: 50px;
+    width: 1100px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+}
+
+#logo {
+    color: white;
+    background-color:  #8B99A3;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    text-align: center;
+}
+
+.navbar-page{
+    display: block;
+    float: left;
+
+}
+
+
+.dropdown-menu {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropdown-item{
+    color: black;
+    background-color: #7395AE;
+    
+}
+
+.on-hover:hover .dropdown-menu{
+    display: block;
+}
+
+
+.link {
+    
+    margin-right: 0px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration-line: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-link {
+    margin-right: 0px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration-line: none;
+    color: black;
+    display: block;
+}
+
+.link:hover{
+    background-color:  #7395AE;
+}
+
+.dropdown-link:hover{
+    background-color: rgb(48, 60, 68);
+}
+
+#search-bar {
+    margin-top: 15px;
+    height: 18px;
+    width: 120px;
+    background-color: white;
+}
+
+
+/*Article  section*/
+
+.article {
+    width: 960px;
+    background-color:#E9E9E9;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#headline {
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+
+/*Footer section*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
