@@ -289,3 +289,42 @@ footer {
     width: 100%;
     background-color:  #7395AE;
 }
+
+/* Recipe section */
+
+.recipe {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.right {
+    right: 15%;
+}
+
+.left {
+    left: 15%;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.recipe img {
+    width: 300px;
+}
+
+#recipe_form {
+    width: 100px;
+}
